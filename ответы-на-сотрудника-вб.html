@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ответы на тест для сотрудников ОПС Wildberries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .intro {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .question-card {
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .question-number {
+            display: inline-block;
+            background-color: #6a11cb;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .question-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .options {
+            margin-bottom: 20px;
+        }
+        
+        .option {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        
+        .option:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .option input {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        .correct-answer {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+            margin-top: 10px;
+        }
+        
+        .correct-answer-label {
+            font-weight: 600;
+            color: #4caf50;
+            margin-bottom: 5px;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .nav-btn {
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background-color: #5a0db5;
+        }
+        
+        .nav-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            position: relative;
+            z-index: 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .question-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ответы на тест для сотрудников ОПС Wildberries</h1>
+            <p class="subtitle">Подготовка к тестированию - 9 вопросов с правильными ответами</p>
+        </header>
+        
+        <section class="intro">
+            <p>На этой странице представлены вопросы, которые могут встретиться при тестировании сотрудников пунктов выдачи заказов Wildberries. Для каждого вопроса указан правильный ответ с пояснением.</p>
+        </section>
+        
+<section id="questions-container">
+        <div class="question-card">
+                    <div class="question-number">Вопрос 1 из 9</div>
+                    <div class="question-text">Что следует сделать, если после проверки товара на столе обнаружилось, что товар пришёл с браком или неверным вложением?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q0-option0" name="q0" checked="" disabled="">
+                            <label for="q0-option0">Извиниться перед клиентом за пришедший с дефектом товар и предложить вернуть его</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q0-option1" name="q0" disabled="">
+                            <label for="q0-option1">Не обращать внимания на дефект и сказать, что товар невозвратный</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q0-option2" name="q0" disabled="">
+                            <label for="q0-option2">Объяснить клиенту, что теперь товар можно вернуть только через заявку на брак в личном кабинете</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q0-option3" name="q0" disabled="">
+                            <label for="q0-option3">Объяснить клиенту, что брак является нормой для такого типа товаров</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Извиниться перед клиентом за пришедший с дефектом товар и предложить вернуть его</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это наиболее клиентоориентированный и профессиональный подход, который соответствует стандартам качественного обслуживания.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 2 из 9</div>
+                    <div class="question-text">Что должен сделать сотрудник ОПС, если у клиента отсутствует QR-код для выдачи товара?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q1-option0" name="q1" disabled="">
+                            <label for="q1-option0">Попросить клиента предоставить паспортные данные</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q1-option1" name="q1" disabled="">
+                            <label for="q1-option1">Попросить клиента вернуться позже с QR-кодом</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q1-option2" name="q1" checked="" disabled="">
+                            <label for="q1-option2">Попросить клиента предоставить последние 4 цифры его номера телефона</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Попросить клиента предоставить последние 4 цифры его номера телефона</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это стандартная процедура для идентификации заказа при отсутствии QR-кода, позволяющая убедиться, что товар выдаётся правильному человеку.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 3 из 9</div>
+                    <div class="question-text">Что делать, если клиент отказывается проверять товар на столе для проверки?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q2-option0" name="q2" disabled="">
+                            <label for="q2-option0">Предложить клиенту не проверять товар</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q2-option1" name="q2" checked="" disabled="">
+                            <label for="q2-option1">Объяснить клиенту, что если не проверить товар, его можно будет вернуть только по одобренной заявке в личном кабинете, если будет обнаружен брак</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q2-option2" name="q2" disabled="">
+                            <label for="q2-option2">Предложить клиенту оставить товар на хранение в ОПС до момента, когда он будет готов проверить его</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q2-option3" name="q2" disabled="">
+                            <label for="q2-option3">Проверить товар самостоятельно при клиенте, взяв ответственность на себя</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Объяснить клиенту, что если не проверить товар, его можно будет вернуть только по одобренной заявке в личном кабинете, если будет обнаружен брак</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это действие информирует клиента о последствиях его отказа, что является правильной процедурой.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 4 из 9</div>
+                    <div class="question-text">Как создать возвратную коробку в десктоп-приложении WB ПВЗ?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q3-option0" name="q3" disabled="">
+                            <label for="q3-option0">Открыть вкладку «Выдать», нажать на кнопку «Создать»</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q3-option1" name="q3" checked="" disabled="">
+                            <label for="q3-option1">Открыть вкладку «Возвраты», перейти в раздел «Коробки», нажать на кнопку «Создать»</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q3-option2" name="q3" disabled="">
+                            <label for="q3-option2">Открыть вкладку «Возвраты», отсканировать наклейку, коробка создается автоматически</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Открыть вкладку «Возвраты», перейти в раздел «Коробки», нажать на кнопку «Создать»</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это прямое и стандартное действие для создания новой возвратной коробки в системе.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 5 из 9</div>
+                    <div class="question-text">Что нужно проверить, если клиент хочет вернуть товар?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q4-option0" name="q4" disabled="">
+                            <label for="q4-option0">Категорию и цвет товара</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q4-option1" name="q4" checked="" disabled="">
+                            <label for="q4-option1">Проверить соответствие всех характеристик товара с карточкой товара</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q4-option2" name="q4" disabled="">
+                            <label for="q4-option2">Категорию и цвет товара, а также его комплектацию и стоимость</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q4-option3" name="q4" disabled="">
+                            <label for="q4-option3">Категорию и цвет товара, а также его комплектацию</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Проверить соответствие всех характеристик товара с карточкой товара</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это наиболее полная и точная проверка, которая гарантирует, что возвращаемый товар соответствует тому, что было заказано.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 6 из 9</div>
+                    <div class="question-text">Что делать, если оплата заказа не проходит?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q5-option0" name="q5" disabled="">
+                            <label for="q5-option0">Предложить клиенту оставить заказ без оплаты и решить вопрос позже</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q5-option1" name="q5" disabled="">
+                            <label for="q5-option1">Проигнорировать проблему и выдать товар клиенту без оплаты</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q5-option2" name="q5" checked="" disabled="">
+                            <label for="q5-option2">Попросить клиента проверить баланс и способ оплаты в профиле</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Попросить клиента проверить баланс и способ оплаты в профиле</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это первое и правильное действие для устранения наиболее частых причин проблемы с оплатой.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 7 из 9</div>
+                    <div class="question-text">Клиент решил отказаться от одного из товаров в заказе. Какие действия вы должны предпринять?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q6-option0" name="q6" checked="" disabled="">
+                            <label for="q6-option0">Снять галочку с карточки товара или отсканировать тот товар, от которого клиент хочет отказаться</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q6-option1" name="q6" disabled="">
+                            <label for="q6-option1">От одного и более товаров отказываться запрещено, клиент обязан забрать всё или отказаться от всех товаров</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q6-option2" name="q6" disabled="">
+                            <label for="q6-option2">Попросить клиента забрать заказ и создать заявку на возврат в клиентском приложении Wildberries</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Снять галочку с карточки товара или отсканировать тот товар, от которого клиент хочет отказаться</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это стандартная процедура частичного отказа от товара в заказе на пункте выдачи.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 8 из 9</div>
+                    <div class="question-text">Как найти заказ клиента перед выдачей?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q7-option0" name="q7" checked="" disabled="">
+                            <label for="q7-option0">Отсканировать QR-код клиента или попросить его предоставить 4 последние цифры номера телефона и код из личного кабинете для определения ячейки, в которой находится товар</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q7-option1" name="q7" disabled="">
+                            <label for="q7-option1">Перейти в раздел «Клиенты» и ввести имя посетителя</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q7-option2" name="q7" disabled="">
+                            <label for="q7-option2">Попросить клиента назвать примерное содержание заказа и дату оформления</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Отсканировать QR-код клиента или попросить его предоставить 4 последние цифры номера телефона и код из личного кабинете для определения ячейки, в которой находится товар</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это официальный и точный способ идентификации заказа в системе.</div>
+                    </div>
+                </div><div class="question-card">
+                    <div class="question-number">Вопрос 9 из 9</div>
+                    <div class="question-text">Что нужно сделать, если клиент хочет примерить товар перед получением?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q8-option0" name="q8" disabled="">
+                            <label for="q8-option0">Перейти к следующему клиенту</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q8-option1" name="q8" checked="" disabled="">
+                            <label for="q8-option1">Попросить клиента проверить товары под камерами, а затем передать вещи на примерку</label>
+                        </div>
+                    
+                        <div class="option">
+                            <input type="radio" id="q8-option2" name="q8" disabled="">
+                            <label for="q8-option2">Сказать, что примерить вещи можно только после получения и оплаты заказа</label>
+                        </div>
+                    </div>
+                    <div class="correct-answer">
+                        <div class="correct-answer-label">Правильный ответ:</div>
+                        <div>Попросить клиента проверить товары под камерами, а затем передать вещи на примерку</div>
+                        <div style="margin-top: 10px; font-style: italic;">Это стандартная процедура, которая позволяет клиенту оценить товар (в том числе примерить) до оплаты, обеспечивая при этом контроль за сохранностью товара.</div>
+                    </div>
+                </div>
+            </section>
+</div>
+        <footer>
+            <p>Информация актуальна на 2025 год.</p>
+            <a href="https://t.me/Kirill_Florik">Создатель Кирилл Флорик</a> <br>
+            <a href="https://kirill-fe.github.io/projects" style="color: #8a63f2;">projects</a>
+        </footer>
+
+    <script>
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            renderQuestions();
+        });
+    </script>
+</body>
+</html>
